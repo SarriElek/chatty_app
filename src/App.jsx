@@ -41,6 +41,7 @@ export default class App extends Component {
         break;
       case INCOMING_USER_INFO:
         this.setState({ connectedUsers: data.content});
+        break;
       default:
         throw new Error(`Unknown event type ${data.type}`);
     }
