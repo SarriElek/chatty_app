@@ -10,17 +10,18 @@ export default class Message extends Component {
   }
 
   render() {
-    const klass = this.props.type === INCOMING_MESSAGE ? 'message' : 'message system';
+    const klass = this.props.message.type === INCOMING_MESSAGE ? 'message' : 'message system';
+    const colorKlass = "message-username-" + this.props.message.color;
     return (
       <div>
         <div className={klass}>
-          { this.props.type === INCOMING_NOTIFICATION && this.props.content }
-          { this.props.type === INCOMING_MESSAGE &&
+          { this.props.message.type === INCOMING_NOTIFICATION && this.props.message.content }
+          { this.props.message.type === INCOMING_MESSAGE &&
             <div>
-            <span className={this.props.color}>{this.props.username}</span>
-            <span className="message-content">{this.props.content}</span>
-            { this.props.url &&
-              <img src={this.props.url}/>
+            <span className={colorKlass}>{this.props.message.username}</span>
+            <span className="message-content">{this.props.message.content}</span>
+            { this.props.message.url &&
+              <img src={this.props.message.url}/>
             }
             </div>
           }

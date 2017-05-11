@@ -13,7 +13,7 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentUser: {name: "Bob"},
+      currentUser: {name: "Anonymous"},
       connectedUsers: '',
       messages: []
     }

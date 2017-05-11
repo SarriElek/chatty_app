@@ -8,13 +8,7 @@ export default class MessageList extends Component {
     var user_colors = this.props.userColors;
     var messagesList = this.props.messages.map((message) => {
         return (
-            <Message key = {message.id}
-                username = {message.username}
-                content = {message.content}
-                type = {message.type}
-                url = {message.url}
-                color = {message.color}
-            />
+            <Message message = {message} />
         )
     });
 
