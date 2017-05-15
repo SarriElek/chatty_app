@@ -1,44 +1,26 @@
-React Boilerplate
-=====================
+# Chatty
 
-A minimal and light dev environment for ReactJS.
+A lightweight chat client that assigns users a color when they set a display name and automatically inlines images when a url is sent.
 
-### Usage
+## Usage
 
-Clone the boilerplate and create your own git repo.
+1. Install dependencies using the `npm install` command.
+2. Start the web server using the `npm start` command. The app will be served at <http://localhost:3000/>.
+3. Go to <http://localhost:3000/> in your browser.
 
-```
-git clone git@github.com:lighthouse-labs/react-simple-boilerplate.git
-git remote rm origin
-git remote add origin [YOUR NEW REPOSITORY]
-# Manually update your package.json file
-```
 
-Install the dependencies and start the server.
+## Dependencies
 
-```
-npm install
-npm start
-open http://localhost:3000
-```
-
-### Static Files
-
-You can store static files like images, fonts, etc in the `build` folder.
-
-For example, if you copy a file called my_image.png into the build folder you can access it using `http://localhost:3000/build/my_image.png`.
-
-### Linting
-
-This boilerplate project includes React ESLint configuration.
-
-```
-npm run lint
-```
-
-### Dependencies
-
-* React
+* ReactJS
 * Webpack
 * [babel-loader](https://github.com/babel/babel-loader)
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+
+## Tech Stack
+
+- HTML
+- CSS / SASS
+- ReactJS
+- Express
+- Node JS
+- WebSocket
